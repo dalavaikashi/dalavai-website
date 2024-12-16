@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import AssociatedWith from './components/AssociatedWith/AssociatedWith';
 import PastProjects from './components/PastProjects/PastProjects';
+import CompanyStats from './components/CompanyStats/CompanyStats';
 import Location from './components/Location/Location';
 import './App.scss';
 
@@ -117,6 +118,7 @@ const App = () => {
           <Hero />
           <AssociatedWith />
           <PastProjects />
+          <CompanyStats />
           <Location />
         </main>
       </div>
