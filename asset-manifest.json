@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dalavai-website/static/css/main.e3cba09a.css",
+    "main.js": "/dalavai-website/static/js/main.28c64b4e.js",
+    "index.html": "/dalavai-website/index.html",
+    "main.e3cba09a.css.map": "/dalavai-website/static/css/main.e3cba09a.css.map",
+    "main.28c64b4e.js.map": "/dalavai-website/static/js/main.28c64b4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3cba09a.css",
+    "static/js/main.28c64b4e.js"
+  ]
+}
