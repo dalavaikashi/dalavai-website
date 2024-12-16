@@ -33,7 +33,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.img 
-        src={`${process.env.PUBLIC_URL}/logos/ajax-fiori.svg`}
+        src="https://dalavaikashi.github.io/testsite/gh-pages/img/logo.png"
         alt="Dalavai Infrastructure Logo"
         className={styles.logo}
         whileHover={{ scale: 1.05 }}
