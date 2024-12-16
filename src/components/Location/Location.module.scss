@@ -1,0 +1,251 @@
+.location {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7f1 50%, #e8f5e9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.headerIcon {
+  font-size: 3rem !important;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(46, 125, 50, 0.2));
+}
+
+.title {
+  color: #2E7D32;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  background: linear-gradient(45deg, #2E7D32, #4CAF50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #34495E;
+  font-size: 1.1rem !important;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto !important;
+}
+
+.locationContent {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.addressSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.addressCard {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
+  height: 100%;
+}
+
+.companyName {
+  color: #2E7D32;
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  background: linear-gradient(45deg, #2E7D32, #4CAF50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.address {
+  color: #34495E;
+  line-height: 1.8 !important;
+  margin-bottom: 2rem !important;
+  font-size: 1.1rem !important;
+}
+
+.contactGrid {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(46, 125, 50, 0.2);
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.08);
+  }
+}
+
+.contactIcon {
+  color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 0.75rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    font-size: 1.5rem;
+  }
+}
+
+.contactDetails {
+  flex: 1;
+}
+
+.contactLabel {
+  color: #2E7D32;
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.contactValue, .contactLink {
+  color: #34495E;
+  font-size: 1rem !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #4CAF50;
+}
+
+.ctaButton {
+  margin-top: auto;
+}
+
+.getDirections {
+  width: 100%;
+  padding: 1rem !important;
+  font-size: 1.1rem !important;
+  background: linear-gradient(45deg, #2E7D32 30%, #4CAF50 90%) !important;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.25) !important;
+  border-radius: 10px !important;
+  text-transform: none !important;
+
+  &:hover {
+    box-shadow: 0 6px 25px rgba(46, 125, 50, 0.35) !important;
+  }
+}
+
+.mapSection {
+  position: relative;
+}
+
+.mapWrapper {
+  height: 100%;
+  min-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.1);
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  background: white;
+}
+
+.backgroundPattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(76, 175, 80, 0.05) 0%, transparent 70%),
+    radial-gradient(circle at 80% 70%, rgba(46, 125, 50, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .locationContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mapWrapper {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .location {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
+  }
+
+  .addressCard {
+    padding: 2rem;
+  }
+
+  .companyName {
+    font-size: 1.5rem !important;
+  }
+
+  .address {
+    font-size: 1rem !important;
+  }
+
+  .mapWrapper {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location {
+    padding: 50px 0;
+  }
+
+  .addressCard {
+    padding: 1.5rem;
+  }
+
+  .contactGrid {
+    gap: 1rem;
+  }
+
+  .contactItem {
+    padding: 0.75rem;
+  }
+
+  .contactIcon {
+    padding: 0.5rem;
+
+    svg {
+      font-size: 1.25rem;
+    }
+  }
+
+  .mapWrapper {
+    min-height: 300px;
+  }
+}

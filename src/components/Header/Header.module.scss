@@ -1,0 +1,144 @@
+.header {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.1);
+
+  &.scrolled {
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 4px 20px rgba(46, 125, 50, 0.1) !important;
+  }
+}
+
+.toolbar {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 2px 8px rgba(46, 125, 50, 0.2));
+}
+
+.logoShape {
+  fill: #2E7D32;
+  transition: fill 0.3s ease;
+}
+
+.logoInner {
+  fill: #4CAF50;
+  transition: fill 0.3s ease;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.company {
+  color: #2E7D32;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.infrastructure {
+  color: #4CAF50;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navButton {
+  position: relative;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2C3E50;
+  padding: 0.5rem 1rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #2E7D32, #4CAF50);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after {
+    width: 80%;
+  }
+}
+
+.ctaButton {
+  background: linear-gradient(45deg, #2E7D32 30%, #4CAF50 90%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.3);
+  }
+}
+
+.menuButton {
+  color: #2E7D32;
+}
+
+.drawer {
+  width: 250px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7f1 100%);
+}
+
+.mobileNavList {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    padding: 0.75rem 0;
+    min-height: 70px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .company {
+    font-size: 1.25rem;
+  }
+
+  .infrastructure {
+    font-size: 0.75rem;
+  }
+}

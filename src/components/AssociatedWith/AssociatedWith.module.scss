@@ -1,0 +1,228 @@
+.associatedWith {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7f1 50%, #e8f5e9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.titleIcon {
+  font-size: 3rem !important;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(46, 125, 50, 0.2));
+}
+
+.title {
+  color: #2E7D32;
+  text-align: center;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  background: linear-gradient(45deg, #2E7D32, #4CAF50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #2E7D32, #4CAF50);
+    border-radius: 2px;
+  }
+}
+
+.subtitle {
+  color: #34495E;
+  font-size: 1.1rem !important;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto !important;
+  margin-top: 1.5rem !important;
+}
+
+.logoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.logoWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logoCard {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 180px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 4px 20px rgba(46, 125, 50, 0.08),
+    0 1px 3px rgba(46, 125, 50, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: rgba(46, 125, 50, 0.2);
+    box-shadow: 
+      0 10px 30px rgba(46, 125, 50, 0.12),
+      0 4px 8px rgba(46, 125, 50, 0.06);
+  }
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.logoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(46, 125, 50, 0.95), rgba(76, 175, 80, 0.95));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.partnerName {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 0.9rem !important;
+  line-height: 1.4;
+}
+
+.trustBadge {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
+
+  p {
+    color: #2E7D32;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+}
+
+.backgroundPattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(76, 175, 80, 0.05) 0%, transparent 70%),
+    radial-gradient(circle at 80% 70%, rgba(46, 125, 50, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .associatedWith {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
+  }
+
+  .logoGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .logoCard {
+    width: 150px;
+    height: 100px;
+    padding: 1rem;
+  }
+
+  .logo {
+    max-height: 60px;
+  }
+
+  .trustBadge {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .associatedWith {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 1.75rem !important;
+  }
+
+  .logoGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .logoCard {
+    width: 120px;
+    height: 80px;
+  }
+
+  .logo {
+    max-height: 50px;
+  }
+
+  .trustBadge {
+    width: 90%;
+    border-radius: 16px;
+  }
+}
