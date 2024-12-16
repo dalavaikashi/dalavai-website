@@ -32,27 +32,13 @@ const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.svg 
-        className={styles.logo} 
-        viewBox="0 0 100 100"
+      <motion.img 
+        src="https://dalavaikashi.github.io/testsite/gh-pages/img/logo.png"
+        alt="Dalavai Infrastructure Logo"
+        className={styles.logo}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300 }}
-      >
-        <motion.polygon 
-          points="50,10 90,40 70,85 30,85 10,40"
-          className={styles.logoShape}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        />
-        <motion.polygon 
-          points="50,20 80,42 65,77 35,77 20,42"
-          className={styles.logoInner}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-        />
-      </motion.svg>
+      />
       <div className={styles.logoText}>
         <motion.span 
           className={styles.company}
