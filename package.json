@@ -4,18 +4,18 @@
   "private": true,
   "homepage": "https://dalavaikashi.github.io/dalavai-website/",
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.2.0",
-    "@mui/material": "^6.2.0",
-    "chart.js": "^4.4.7",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.2",
+    "@mui/material": "^5.15.2",
+    "chart.js": "^4.4.1",
     "cra-template-typescript": "1.2.0",
-    "framer-motion": "^11.14.4",
-    "react": "^19.0.0",
+    "framer-motion": "^10.16.16",
+    "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.83.0"
+    "sass": "^1.69.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,11 +45,11 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
-    "@typescript-eslint/eslint-plugin": "^8.18.0",
-    "@typescript-eslint/parser": "^8.18.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "gh-pages": "^6.1.1",
-    "typescript": "^5.7.2"
+    "typescript": "^4.9.5"
   }
 }
