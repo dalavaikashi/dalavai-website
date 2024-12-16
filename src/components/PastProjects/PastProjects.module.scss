@@ -44,15 +44,13 @@
 }
 
 .projectGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
   margin-bottom: 4rem;
   position: relative;
   z-index: 1;
 }
 
 .projectCard {
+  height: 100%;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   overflow: hidden;
@@ -172,6 +170,9 @@
 
 .content {
   padding: 2rem;
+  height: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
 }
 
 .projectTitle {
@@ -189,6 +190,7 @@
   font-size: 1rem !important;
   line-height: 1.6 !important;
   margin-bottom: 1.5rem !important;
+  flex-grow: 1;
 }
 
 .learnMore {
@@ -282,17 +284,13 @@
     font-size: 1.1rem !important;
   }
 
-  .projectGrid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-
   .projectImage {
     height: 200px;
   }
 
   .content {
     padding: 1.5rem;
+    height: calc(100% - 200px);
   }
 
   .projectTitle {
@@ -315,11 +313,6 @@
 }
 
 @media (max-width: 480px) {
-  .projectGrid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
   .content {
     padding: 1.25rem;
   }

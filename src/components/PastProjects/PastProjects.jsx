@@ -59,7 +59,7 @@ const PastProjects = () => {
           </Typography>
         </motion.div>
 
-        <Grid container spacing={3} className={styles.projectGrid}>
+        <Grid container spacing={4} className={styles.projectGrid}>
           {projects.map((project, index) => (
             <Grid item xs={12} sm={6} md={6} lg={3} key={project.title}>
               <motion.div
