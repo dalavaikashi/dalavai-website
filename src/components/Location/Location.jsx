@@ -105,7 +105,7 @@ const Location = () => {
                   variant="contained" 
                   color="primary"
                   className={styles.getDirections}
-                  href="https://goo.gl/maps/YOUR_MAPS_LINK"
+                  href="https://maps.app.goo.gl/UfpD4EZ3hibXeaAb9"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -124,7 +124,7 @@ const Location = () => {
           >
             <div className={styles.mapWrapper}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0124030046547!2d77.58974731482233!3d13.027897990818013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17b5a4e22bd1%3A0x9c5a2c7d7b37e0b5!2sGanganagar%20Extension%2C%20Bengaluru%2C%20Karnataka%20560032!5e0!3m2!1sen!2sin!4v1629789456789!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.5020850623569!2d77.56685075820202!3d13.035406197703514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17e76eb9b6a1%3A0x575e171c51283c9!2sDALAVAI%20INFRASTRUCTURE!5e0!3m2!1sen!2sin!4v1585124988310!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
